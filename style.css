@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Brawl";
+    src: url(./fonte/Nougat-ExtraBlack.ttf) format(truetype);
+}
+
+:root {
+    --fundoBlack: #1e1e1e;
+    --fonteColor: #ffffff;
+    --BlueDark: #2774D0;
+    --BlueDark2: #2774D0;
+    --Fonte-Padrão: "Brawl";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 180px;
+    background-color: var(--fundoBlack);
+}
+
+#box-principal {
+    position: relative;
+}
+
+#box-principal > picture > img {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    left: 143px;
+    top: 15px;
+}
+
+#menu-navigation {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#menu-navigation > ul {
+    position: absolute;
+    display: flex;
+    font-family: var(--Fonte-Padrão);
+    list-style: none;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1.5px;
+}
+
+#menu-navigation > ul > li > .brawl {
+    position: absolute;
+    left: -200px;
+    color: var(--fonteColor);
+    text-decoration: none;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bolder;
+    word-spacing: 50px !important;
+}
+
+#menu-navigation > ul > li > .Historia {
+    position: absolute;
+    left: 10px;
+    color: var(--fonteColor);
+    text-decoration: none;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bolder;
+    word-spacing: 50px !important;
+}
+
+#menu-navigation > ul > li > .download {
+    position: absolute;
+    left: 180px;
+    color: var(--fonteColor);
+    text-decoration: none;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+#menu-navigation > ul > li > .download:hover {
+    text-decoration: underline;
+    color: white;
+    transition: 0.8s;
+    padding: 2px;
+}
+
+#menu-navigation > ul > li > .Historia:hover {
+    text-decoration: underline;
+    color: white;
+    transition: 0.8s;
+    padding: 2px;
+}
+
+#menu-navigation > ul > li > .brawl:hover {
+    text-decoration: underline;
+    color: white;
+    transition: 0.8s;
+    padding: 2px;
+}
+
+main {
+    position: relative;
+    background-image: url(./Images/background/fundo\ -brawler\ comun2.0.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 566px;
+}
+
+main > div > div:nth-last-of-type(2) {
+    position: absolute;
+    width: 656px;
+    height: 204px;
+    top: -28%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 21px;
+}
+
+main > #section-primary > div > p:nth-last-of-type(1) {
+    position: absolute;
+    font-family: var(--Fonte-Padrão);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--fonteColor);
+    top: 66%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    width: 591px;
+    height: 166px;
+}
+
+main > #section-primary > span > img {
+    position: relative;
+    width: 598px;
+    height: 550px;
+    left: 712px;
+    top: 0px;
+}
+
+main > #section-secundary {
+    position: relative;
+    width: 100vw;
+    height: 766px;  
+    background-image: url(./Images/background/painel-brawl-stars.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main > #section-secundary > div:nth-last-of-type(2) > h1 {
+    position: absolute;
+    left: 85%;
+    top: 200%;
+    transform: translate(-50%, -50%);
+    font-family: var(--Fonte-Padrão);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: var(--fonteColor);
+}
+
+main > #section-secundary div:nth-last-of-type(1) {
+    position: absolute;
+    width: 590px;
+    height: 418px;
+    left: 50px;
+    top: 226px;
+    background: rgba(30, 30, 30, 0.52);
+    box-shadow: -17px 13px 5px #2774D0;
+    border-radius: 35px;
+}
+
+main > #section-secundary div:nth-last-of-type(1) > p {
+    position: absolute;
+    width: 465px;
+    height: 369px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--Fonte-Padrão);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 41px;  
+    color: var(--fonteColor);
+}
+
+main > #section-terceiro {
+    position: relative;
+    width: 100vw;
+    height: 766px;
+}
+
+main > #section-terceiro > div > h1 {
+    position: absolute;
+    width: 605px;
+    height: 251px;
+    left: 649px;
+    top: 71px;
+    font-family: var(--Fonte-Padrão);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
+    color: var(--fundoBlack);
+}
+
+main > #section-terceiro > div > p {
+    position: absolute;
+    width: 605px;
+    height: 251px;
+    left: 649px;
+    top: 130px;
+    font-family: var(--Fonte-Padrão);
+    font-size: 21px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--fundoBlack);
+    line-height: 33px;
+}
+
+main > #section-terceiro > span:nth-last-of-type(3) {
+    position: absolute;
+    background-image: url(./Images/bg_intro_brawlstars.31c1276f.webp);
+    width: 879px;
+    height: 436px;
+    left: -288px;
+    top: calc(50% - 436px/2 - 21px);
+}
+
+main > #section-terceiro > span:nth-last-of-type(2) > img:nth-last-of-type(1) {
+    position: absolute;
+    width:  476px;
+    height: 340px;
+    left: 740px;
+    top: 443px;
+}
+
+main > #section-terceiro > span:nth-last-of-type(1) > img:nth-last-of-type(2) {
+    position: absolute;
+    width: 203px;
+    height: 61px;
+    left: 635px;
+    top: 443px;
+}
+
+main > #section-terceiro > span:nth-last-of-type(1) > img:nth-last-of-type(1) {
+    position: absolute;
+    width: 203px;
+    height: 61px;
+    left: 1100px;
+    top: 420px;
+}
+
+main > #section-quarto {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    background-image: url(./Images/background/fundo\ -brawler\ comun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main > #section-quarto > div:nth-last-of-type(1) > h1 {
+    position: absolute;
+    width: 1069px;
+    height: 147px;
+    left: 50%;
+    top: 5%;
+    transform: translate(-40%);
+    font-size: 96px;
+    font-family: var(--Fonte-Padrão);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--fonteColor);
+}
+
+main > #section-quarto > span:nth-last-of-type(2) > img {
+    position: absolute;
+    width: 414px;
+    height: 433px;
+    left: 42px;
+    top: 179px;
+}
+
+main > #section-quarto > span:nth-last-of-type(2) > h3 {
+    position: absolute;
+    width: 126px;
+    height: 51px;
+    left: 42px;
+    top: 396px;
+    font-family: var(--Fonte-Padrão);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    color: var(--fonteColor);
+}
+
+main > #section-quarto > span:nth-last-of-type(1) {
+    position: absolute;
+    width: 590px;
+    height: 418px;
+    left: 640px;
+    top: 176px;
+    background: rgba(30, 30, 30, 0.52);
+    box-shadow: -17px 13px 5px #2774D0;
+    border-radius: 35px;
+}
+
+main > #section-quarto > span:nth-last-of-type(1) > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -50%);
+    font-family: var(--Fonte-Padrão);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    color: var(--fonteColor);
+}
+
+main > #section-quarto > span:nth-last-of-type(1) > .bolinha {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    top: 15%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: var(--fonteColor);
+}
+
+footer {
+    position: relative;
+    top: 380%;
+    width: 100vw;
+    height: 615px;
+}
+
+footer > #footer-primary {
+    position: absolute;
+    width: 100vw;
+    height: 310px;
+    left: 0px;
+    top: 305px;  
+    background-color: var(--fundoBlack);   
+}
+
+footer > #footer-primary > div:nth-last-of-type(1) > span {
+
+}
